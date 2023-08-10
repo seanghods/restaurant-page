@@ -26,6 +26,10 @@ function setupInitial() {
     textSec.innerHTML = "Welcome to Sean's Burgers";
     mainDiv.appendChild(textSec);
 
+    const textSec2 = document.createElement('h5');
+    textSec2.innerHTML = "Home of the Burgers";
+    mainDiv.appendChild(textSec2);
+
     content.appendChild(mainDiv);
 
     // footer
@@ -41,6 +45,24 @@ function setupInitial() {
 
 }
 
+function setupHome() {
+    const mainDiv = document.querySelector('.main-body');
+
+    mainDiv.innerHTML = '';
+
+    const mainImg = document.createElement('img');
+    mainImg.src = mainPic;
+    mainDiv.appendChild(mainImg);
+
+    const textSec = document.createElement('h3');
+    textSec.innerHTML = "Welcome to Sean's Burgers";
+    mainDiv.appendChild(textSec);
+
+    const textSec2 = document.createElement('h5');
+    textSec2.innerHTML = "Home of the Burgers";
+    mainDiv.appendChild(textSec2);
+}
+
 function createButton(id, inner) {
     const name = document.createElement('button');
     name.setAttribute('id',id);
@@ -48,4 +70,4 @@ function createButton(id, inner) {
     return name;
 }
 
-export {setupInitial}
+export {setupInitial, setupHome}

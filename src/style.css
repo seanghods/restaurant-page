@@ -48,16 +48,68 @@ button:hover {
 
 h3 {
     font-size: 5em;
+    margin: 0;
+    text-align: center;
+}
+
+h5 {
+    font-size: 2em;
 }
 
 img {
-    width: 700px;
+    width: 50%;
     border-radius: 10px;
+    margin-top: 50px;
 }
 
 p {
     margin: 0;
 }
+
+@media screen and (max-width: 500px) {
+    img {
+        width: 75%;
+          }
+}
+
+/* menu */
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px;
+    gap: 10px;
+    color: whitesmoke;
+    padding: 25px;
+    border: 5px solid grey;
+    border-radius: 10px;
+    box-shadow: 10px 10px darkblue;
+}
+
+.card h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.card img {
+    width: 35em;;
+}
+
+@media screen and (max-width: 500px) {
+    .card img {
+        width: 90%;
+        margin-top: 0px;
+          }
+}
+
 
 /* footer */
 
