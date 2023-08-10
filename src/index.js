@@ -1,6 +1,6 @@
 import './style.css';
-import './home.js';
-import './menu.js';
-import './contact.js';
+import {setupInitial} from './js/home.js';
+import './js/menu.js';
+import './js/contact.js';
 
-// setupInitial();
+setupInitial();

@@ -25,11 +25,15 @@ button {
     padding: 10px 20px;
     font-weight: bold;
     border: 1px solid white;
+    transition: transform 0.2s;
 }
 
 button:hover {
+    transform: scale(1.1);
+    color: white;
     cursor: pointer;
 }
+
 
 /* main body */
 
